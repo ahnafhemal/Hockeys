@@ -78,9 +78,12 @@
       </ul>
     </div>
     <div class="navbar-end">
-        <button class="btn btn-ghost btn-circle ">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-          </button>
+      <div class="hidden lg:block">
+        <button class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+        </button>
+      </div>
+      
       <a class="btn bg-PrimaryColor text-white font-bold">Button</a>
     </div>
 </div>
@@ -89,7 +92,8 @@
 
 <!-- ***banner section start ***-->
 
-<div class="carousel w-full lg:h-[550px]  pt-14">
+<section class="relative px-5">
+  <div class="carousel w-full lg:h-[550px]  pt-14 ">
     <div id="slide1" class="carousel-item relative w-full">
       <img src="./Images/1.png" class="w-full" />
       <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -119,7 +123,11 @@
       </div>
     </div>
   </div>
-
+  <div class="p-2 lg:p-8 w-[100%] lg:w-2/4 bg-[#131318] text-white rounded-md lg:absolute bottom-10 right-10">
+    <h4 class="font-extrabold text-lg lg:text-2xl">Meet all the heroes from the field</h4>
+    <p class="text-[#ffffff80]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+  </div>
+</section>
 <!-- ***banner section end ***-->
 </header>
 
@@ -177,17 +185,44 @@
     </div>
     <hr class="border-dashed border-1">
 
-<div class="mt-12 grid grid-cols-1 lg:grid-cols-2 lg:grid-flow-row gap-4">
-  <div class=" lg:row-span-2">
-    <img src="./Images/2.png" alt="">
-  </div>
-  <div class=" lg:row-span-2">
-    <img src="./Images/3.png" alt="">
-  </div>
-  <div class="lg:row-span-2 lg:col-span-2">
-    <img src="./Images/4.png" alt="">
-  </div>
-</div>
+    <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 lg:grid-flow-row gap-4">
+      <div class=" lg:row-span-2 ">
+        <div class="hero h-full" style="background-image: url(./Images/2.png);">
+          <div class="hero-overlay bg-opacity-50 rounded-lg"></div>
+          <div class="hero-content  text-white lg:pt-24">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-xl lg:text-5xl font-bold">Hello there</h1>
+              <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <button class="btn bg-PrimaryColor text-white font-bold border-0">Register Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" lg:row-span-2">
+        <div class="hero h-full" style="background-image: url(./Images/3.png);">
+          <div class="hero-overlay bg-opacity-50 rounded-lg"></div>
+          <div class="hero-content  text-white lg:pt-24">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-xl lg:text-3xl font-bold">Hello there</h1>
+              <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <button class="btn bg-PrimaryColor text-white font-bold border-0">Register Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:row-span-2 lg:col-span-2 ">
+        <div class="hero h-full" style="background-image: url(./Images/4.png);">
+          <div class="hero-overlay bg-opacity-50 rounded-lg"></div>
+          <div class="hero-content  text-white lg:pt-52">
+            <div class="lg:max-w-md">
+              <h1 class="mb-5 text-xl lg:text-3xl  font-bold">Hello there</h1>
+              <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <button class="btn bg-PrimaryColor text-white font-bold border-0">Register Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </section>
 
 
@@ -432,11 +467,58 @@
   </div>
   </form>
 </section>
-
 <!-- section get in touch end -->
-</main>
-<footer>
+<!-- social section start  -->
 
+<section>
+  <div class="text-center pb-8 bg-[#1313180d] rounded-md py-9">
+    <h2 class="lg:text-2xl font-extrabold mb-5">Social Media</h2>
+  <ul class="flex justify-center gap-4 ">
+    <li><i class="fa-brands fa-twitter"></i></li>
+    <li><i class="fa-brands fa-facebook"></i></li>
+    <li><i class="fa-brands fa-instagram"></i></li>
+    <li><i class="fa-brands fa-github"></i></li>
+  </ul>
+</section>
+<!-- social section end -->
+</main>
+<footer class="bg-black text-white grid grid-cols-1 lg:grid-cols-4 gap-x-28 p-20">
+<div class="row-span-4">
+  <h3 class="text-2xl font-extrabold ">Get In Touch</h3>
+  <p>Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+  <i class="fa-solid fa-envelope"></i><p>hockeys@support.com</p>
+  <i class="fa-solid fa-phone"></i><p>(+62) 123-321-543</p>
+</div>
+<div class="row-span-2">
+  <h5 class="text-xl font-bold">Company</h5>
+  <ul>
+    <li>About us</li>
+    <li>Leadership</li>
+    <li>Careers</li>
+    <li>News & Article</li>
+    <li>Legal Notice</li>
+  </ul>
+</div>
+<div class="row-span-2">
+  <h5 class="text-xl font-bold">Support</h5>
+  <ul>
+    <li>Help Center</li>
+    <li>FAQ</li>
+    <li>Ticket Support</li>
+    <li>Contact Us</li>
+  </ul>
+</div>
+<div>
+  <h5 class="text-xl font-bold">Services</h5>
+  <ul>
+    <li>Academy</li>
+    <li>Group Lesson</li>
+    <li>Private Lesson</li>
+    <li>Hockeys for kids</li>
+    <li>Hockeys for Adult</li>
+  </ul>
+
+</div>
 </footer>
 </body>
 </html>
